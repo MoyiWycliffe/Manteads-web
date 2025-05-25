@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Job Seeker Profile</title>
+<link rel="stylesheet" href="jobseekerprofile.css">
+<style>
+  .error {color: red;}
+  label {display: block; margin: 10px 0 5px;}
+  textarea {width: 300px; height: 60px;}
+  input, textarea {width: 300px; padding: 5px;}
+  button {margin-top: 10px; padding: 10px 20px;}
+</style>
+</head>
+<body>
+
+<section class="profile-display">
+  <header>
+    <h2>Your Profile</h2>
+    <p class="profile-intro">Welcome to your personal job seeker profile dashboard. Below are your details as we have them recorded.</p>
+  </header>
+
+  <div class="profile-details">
+    <p><strong>Email:</strong> <!-- Insert email here --></p>
+    <p><strong>Phone Number:</strong> <!-- Insert phone number here --></p>
+    <p><strong>Location:</strong> <!-- Insert location here --></p>
+    <p><strong>Date of Birth:</strong> <!-- Insert date of birth here --></p>
+    <p><strong>Skills:</strong> <!-- Insert skills here --></p>
+    <p><strong>Experience:</strong> <!-- Insert experience here --></p>
+    <p><strong>Education:</strong> <!-- Insert education here --></p>
+    <p><strong>Skill Level:</strong> <!-- Insert skill level here --></p>
+    <p><strong>Language:</strong> <!-- Insert language here --></p>
+  </div>
+
+  <hr>
+
+  <footer class="profile-footer">
+    <p>If you want to update your profile, just edit the form below and submit.</p>
+    <p class="tips">Tip: Keep your profile information up to date to receive the best job recommendations tailored for you.</p>
+  </footer>
+</section>
+
+<h2><!-- Update Your Profile or Create Your Profile --></h2>
+
+<form method="POST" action="">
+  <p>Please fill out the form below with your most accurate and up-to-date information. This helps employers find the best match for you.</p>
+
+  <label>Email:<br>
+    <input type="email" name="Email" value="" required>
+    <small>Your primary contact email (used for all communications).</small>
+    <span class="error"><!-- Email error message --></span>
+  </label>
+
+  <label>Phone Number:<br>
+    <input type="text" name="PhoneNumber" value="" required>
+    <small>Include country code if applicable, e.g., +1 234 567 890.</small>
+    <span class="error"><!-- Phone number error message --></span>
+  </label>
+
+  <label>Location:<br>
+    <input type="text" name="Jobseeker_location" value="" required>
+    <small>City and country where you are currently based or seeking jobs.</small>
+    <span class="error"><!-- Location error message --></span>
+  </label>
+
+  <label>Date of Birth:<br>
+    <input type="date" name="Date_oF_Birth" value="" required>
+    <small>Your age helps match job opportunities suited for your experience level.</small>
+    <span class="error"><!-- Date of birth error message --></span>
+  </label>
+
+  <label>Skills:<br>
+    <textarea name="Skills" required></textarea><br>
+    <small>List your key skills relevant to your desired job (e.g., programming, communication, design).</small>
+    <span class="error"><!-- Skills error message --></span>
+  </label>
+
+  <label>Experience:<br>
+    <textarea name="Experience" required></textarea><br>
+    <small>Summarize your work history and notable achievements.</small>
+    <span class="error"><!-- Experience error message --></span>
+  </label>
+
+  <label>Education:<br>
+    <textarea name="EDUCATION" required></textarea><br>
+    <small>Include your highest completed education and any relevant certifications.</small>
+    <span class="error"><!-- Education error message --></span>
+  </label>
+
+  <label>Skill Level:<br>
+    <input type="text" name="Skill_level" value="" required>
+    <small>Example: Beginner, Intermediate, Advanced, Expert.</small>
+    <span class="error"><!-- Skill level error message --></span>
+  </label>
+
+  <label>Language:<br>
+    <input type="text" name="Language" value="" required>
+    <small>Languages you speak fluently or professionally.</small>
+    <span class="error"><!-- Language error message --></span>
+  </label>
+
+  <button type="submit">Update Profile or Create Profile </button>
+</form>
+
+</body>
+</html>

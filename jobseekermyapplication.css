@@ -1,0 +1,109 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .applications,.saved{
+      background: #c2bebe;
+      padding: 20px;
+      width: 100%;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    .applications-container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .applications-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .applications-header h2 {
+      margin: 0;
+      color: #333;
+    }
+
+    .applications-header p {
+      color: #777;
+    }
+
+    .application-list {
+      margin-top: 30px;
+    }
+
+    .application-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .application-item:last-child {
+      border-bottom: none;
+    }
+
+    .application-item h4 {
+      margin: 0;
+      color: #007bff;
+    }
+
+    .application-item p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .application-item .status {
+      font-weight: bold;
+    }
+
+    .status-pending {
+      color: #ffc107;
+    }
+
+    .status-interview {
+      color: #28a745;
+    }
+
+    .status-rejected {
+      color: #dc3545;
+    }
+
+    .status-offer {
+      color: #007bff;
+    }
+
+    .application-item .view-details-btn {
+      padding: 8px 15px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .application-item .view-details-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #6c757d;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .back-btn:hover {
+      background-color: #5a6268;
+    }

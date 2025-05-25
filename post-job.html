@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Browse thousands of jobs and apply online easily on MANTEADS platform." />
+  <meta name="author" content="MANTEADS" />
+  <meta name="keywords" content="jobs, career, apply online, job search,Fill Surveys,Complete microtasks and offerwalls." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <title>Post a Job</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background: #222;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      border-radius: 6px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+      font-family: inherit;
+      resize: vertical;
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    .btn {
+      background: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background: darkgreen;
+    }
+
+    span {
+      color: red;
+      font-size: 13px;
+      display: block;
+      margin-top: 4px;
+      min-height: 18px;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="logo">USER NAME HERE</div>
+  <div>
+    <a href="employer-dashboard.php">Dashboard</a>
+    <a href="Logout.php">Logout</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>Post a New Job</h2>
+  <form action="YOUR_FORM_ACTION" method="POST">
+    <label for="title">Job Title *</label>
+    <input type="text" id="title" name="title" value="" />
+    <span></span>
+
+    <label for="description">Job Description *</label>
+    <textarea id="description" name="description"></textarea>
+    <span></span>
+
+    <label for="category">Category *</label>
+    <select id="category" name="category">
+      <option value="">-- Select Category --</option>
+      <option value="Technology">Technology</option>
+      <option value="Healthcare">Healthcare</option>
+      <option value="Business">Business</option>
+      <option value="Creative-Jobs">Creative Jobs</option>
+      <option value="Education-Jobs">Education Jobs</option>
+      <option value="Engineering">Engineering</option>
+      <option value="Art-And-Entertainment">Art And Entertainment</option>
+      <option value="GovernmentJobs">Government Jobs</option>
+      <option value="Skilled-Trades-Jobs">Skilled Trades Jobs</option>
+      <option value="HospitalityJobs">Hospitality Jobs</option>
+      <option value="ScienceAndResearch">Science And Research</option>
+      <option value="Finance">Finance</option>
+      <option value="Retail">Retail</option>
+      <option value="Transportation">Transportation</option>
+      <option value="Telecommunications">Telecommunications</option>
+      <option value="Others">Others</option>
+    </select>
+    <span></span>
+
+    <label for="location">Location *</label>
+    <input type="text" id="location" name="location" value="" />
+    <span></span>
+
+    <label for="deadline">Application Deadline *</label>
+    <input type="date" id="deadline" name="deadline" value="" />
+    <span></span>
+
+    <label for="type">Job Type</label>
+    <select id="type" name="type">
+      <option value="Full-time">Full-time</option>
+      <option value="Part-time">Part-time</option>
+      <option value="Remote">Remote</option>
+      <option value="Contract">Contract</option>
+    </select>
+    <span></span>
+
+    <label for="salary">Salary Range</label>
+    <input type="text" id="salary" name="salary" placeholder="e.g., KES 50,000 - 80,000" value="" />
+    <span></span>
+
+    <label for="experience">Experience Level</label>
+    <select id="experience" name="experience">
+      <option value="Entry">Entry</option>
+      <option value="Mid">Mid</option>
+      <option value="Senior">Senior</option>
+    </select>
+    <span></span>
+
+    <label for="skills">Required Skills (comma-separated)</label>
+    <input type="text" id="skills" name="skills" placeholder="e.g., HTML, CSS, PHP" value="" />
+    <span></span>
+
+    <label for="Application-link/email">Application Link/Email</label>
+    <input type="text" id="Application-link/email" name="Application-link/email" value="" />
+
+    <button class="btn" type="submit" name="post-job-Btn">Post Job</button>
+  </form>
+</div>

@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse thousands of jobs and apply online easily on MANTEADS platform.">
+  <meta name="author" content="MANTEADS">
+  <meta name="keywords" content="jobs, career, apply online, job search, Fill Surveys, Complete microtasks and offerwalls.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>Earning Dashboard</title>
+  <link rel="stylesheet" href="earningDashboard.css">
+  <style>
+    h1 strong {
+      color: blue;
+      font-size: 1.2em;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar Placeholder -->
+<nav>
+  <!-- Include your navbar content here -->
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Dashboard</a></li>
+    <li><a href="#">Logout</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <!-- Welcome Message -->
+  <h1>HI, <strong>USERNAME</strong>, WELCOME TO YOUR EARNINGS DASHBOARD.</h1>
+
+  <!-- Wallet Section -->
+  <div class="wallet">
+    <h3>WALLET</h3>
+    <p>Your Total Balance: <span style="font-size:23px; font-weight:bold;">$100.00</span></p>
+    <p>Your Earnings From Surveys: <span style="font-size:23px; font-weight:bold;">$40.00</span></p>
+    <p>Your Earnings Microtasks: <span style="font-size:23px; font-weight:bold;">$30.00</span></p>
+    <p>Your Earnings From Offerwalls: <span style="font-size:23px; font-weight:bold;">$30.00</span></p>
+    <button><a href="withdraw.html">WITHDRAW</a></button>
+  </div>
+
+  <!-- Transaction History -->
+  <div class="Transactions">
+    <h3>TRANSACTION HISTORY</h3>
+    <table border="1">
+      <tr>
+        <th>Date</th>
+        <th>Type</th>
+        <th>Amount</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>2025-05-25</td>
+        <td>Withdrawal</td>
+        <td>$20.00</td>
+        <td>Completed</td>
+      </tr>
+      <tr>
+        <td>2025-05-20</td>
+        <td>Survey</td>
+        <td>$5.00</td>
+        <td>Credited</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Affiliate Marketing -->
+  <div class="Affiliate">
+    <h3>AFFILIATE MARKETING</h3>
+    <p>Total Referrals: <span style="font-size:23px; font-weight:bold;">$50.00</span></p>
+    <p>Pending Referrals: <span style="font-size:23px; font-weight:bold;">$10.00</span></p>
+    <p>Successful Referrals: <span style="font-size:23px; font-weight:bold;">$40.00</span></p>
+    <p>Balance From Referrals: <span style="font-size:23px; font-weight:bold;">$25.00</span></p>
+
+    <p>Your Referral Link</p>
+    <input type="text" id="referralLink" value="https://example.com/ref/12345" readonly style="width: 90%;">
+    <button onclick="copyReferralLink()">Copy Link</button>
+
+    <script>
+      function copyReferralLink() {
+        var copyText = document.getElementById("referralLink");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        alert("Referral link copied: " + copyText.value);
+      }
+    </script>
+  </div>
+
+  <!-- Available Tasks -->
+  <div class="available-tasks">
+    <h3>AVAILABLE TASKS</h3>
+
+    <!-- Surveys -->
+    <div class="surveys">
+      <h4>SURVEYS</h4>
+      <h5>Title | - Rewards</h5>
+      <p><span class="description">Description</span><br>
+        Participate in survey about daily habits.<br>
+      </p>
+      <button>Start</button>
+    </div>
+
+    <!-- Microtasks -->
+    <div class="microtasks">
+      <h4>MICROTASKS</h4>
+      <img src="Mylogo.jpg" alt="offer">
+      <h5>Title | - Rewards</h5>
+      <p><span class="description">Description</span><br>
+        Complete simple tasks and earn instantly.<br>
+      </p>
+      <button>Complete Offer</button>
+    </div>
+
+    <!-- Offerwalls -->
+    <div class="Offerwalls">
+      <h4>OFFERWALLS</h4>
+      <h5>Title | - Rewards</h5>
+      <p><span class="description">Description</span><br>
+        Download an app and use it for 2 days.<br>
+      </p>
+      <button>Start Task</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer Placeholder -->
+<footer>
+  <p>&copy; 2025 MANTEADS. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Post jobs, manage applications, and hire the best talent through the MANTEADS platform — your complete recruitment solution." />
+  <meta name="author" content="MANTEADS" />
+  <meta name="keywords" content="employer dashboard, post jobs, manage applicants, recruit talent, online hiring, HR tools, MANTEADS recruitment" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <title>MANTEADS – Employer Portal</title>
+  <link rel="stylesheet" href="employer.css" />
+</head>
+
+<body>
+  <!-- Sidebar Navigation -->
+  <header>
+    <nav id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+      </div>
+      <div class="navbar" id="navbar">
+        <ul class="sidebar-nav">
+          <!-- Placeholder for dynamic session-based navigation -->
+          <!-- If user is logged in -->
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Logout</a></li>
+          <li><a href="#">Post a Job</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Upgrade</a></li>
+          <li><a href="#">Applications</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Earn</a></li>
+
+          <!-- Else (if not logged in) -->
+          <!--
+          <li><a href="#">Home</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Earn</a></li>
+          <li><a href="#">Login</a></li>
+          -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <button class="open-sidebar-btn" onclick="toggleSidebar()">☰</button>
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("open");
+    }
+  </script>
+
+  <main>
+    <section class="intro" id="intro">
+      <div>
+        <h1>Welcome to MANTEADS Employer Hub</h1>
+        <p>
+          MANTEADS is your trusted digital recruitment platform designed to streamline your hiring process from job posting to candidate selection. Whether you're a startup looking for your first hire or a large enterprise scaling fast, our platform empowers employers with intelligent hiring tools, real-time applicant tracking, and customizable job listings.
+        </p>
+      </div>
+      <p>
+        With access to thousands of verified job seekers across multiple skill sets and industries, MANTEADS ensures that your listings reach the right talent. Our advanced filtering and job targeting tools boost visibility among relevant candidates, improving hiring efficiency and reducing recruitment costs.
+      </p>
+    </section>
+
+    <section class="features">
+      <h2>Key Employer Features</h2>
+      <ul>
+        <li>Post unlimited job vacancies quickly and easily</li>
+        <li>Access a wide pool of job seekers across Kenya and beyond</li>
+        <li>Track applications in real time with our dynamic dashboard</li>
+        <li>Customize your employer profile for better branding and visibility</li>
+        <li>Communicate directly with shortlisted applicants</li>
+        <li>Offer tasks, gigs, or microjobs and manage payouts via our Earn module</li>
+        <li>Promote listings via sponsored placements for higher reach</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Placeholder for footer -->
+  <footer>
+    <footer>
+      <ul>
+         <li><a href="Views.php">Comment</a></li>
+        <li><a href="Contact.php">Contact</a></li>
+        <li><a href="Privacy.php">Privacy Policy</a></li>
+        <li><a href="Terms-Of-Use.php">Terms of Use</a></li>
+        <li><a href="Cookies.php">Cookies Policy</a></li>
+        <li><a href="Help&Support.php">Help</a></li>
+      </ul>
+    <p>&copy; <strong id="Year"></strong> MANTEADS. All rights reserved.</p>
+    <script>
+      let d=new Date();
+      let year=d.getFullYear();
+      let month=d.getMonth();
+      let date=d.getDate();
+      let day=d.getDay();
+      let DaysInAWeek=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      let MonthInAYear=["January","February","March","April","May","June","July","August","September","October","November","December"];
+      let today=DaysInAWeek[day]+" "+date+" "+MonthInAYear[month]+" "+year;
+      document.getElementById('Year').textContent=today;
+    </script>
+   </footer>
+  </footer>
+</body>
+</html>
